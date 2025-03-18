@@ -29,7 +29,7 @@
             <layer id="pnmgl:us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326" name="Cale de mise à l'eau"  visible="false" tiled="false"
 				url="http://localhost:8080/geoserver/wms"
                 attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">   
-                <template url="../templates/test.mst"/>   
+                <template url="apps/pnmgl/templates/test.mst"/>   
 		    </layer>
 
             <layer id="pnmgl:us_med_PNMGL_chantier_naval_AAMP_pt_L93" name="Chantier naval"  visible="false" tiled="false"
