@@ -15,6 +15,10 @@ Les fichiers attenants au projet sont présents dans `apps/pnmgl`
 
 Le fichier pour ajouter/enlever des couches est `apps/pnmgl.xml`
 
+# Interactions 
+
+Pour pouvoir interagir avec les différentes couches, il faut préciser l'attribut queryable="true" dans l'attribution de la couche dans le fichier `pnmgl.xml`
+
 
 ## Géoserveur
 
@@ -25,6 +29,14 @@ mdp : geoserver
 Espace de travail: pnmgl
 
 Entrepôts: 
-- departement: pour effectuer des tests, issus d'un fichier shapefile présent dans apps/pnmgl/data
-
+-Entrepôts de test
+    - pnmgl:departement: pour effectuer des tests, issus d'un fichier shapefile présent dans apps/pnmgl/data
+-Chapitre 6: Usages
+    - pnmgl:us_med_PNMGL_parcours_jetski_2023_ofb_ln_4326
+    - pnmgl:us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326"
+    - pnmgl:us_med_PNMGL_chantier_naval_AAMP_pt_L93
+    - pnmgl:us_med_PNMGL_plan_balisage_plages_ofb_pol_4326
+    - pnmgl:us_med_PNMGL_route_transport_commerce_ofb_ln_4326
+    - pnmgl:us_med_PNMGL_sites_plongee_2021_ofb_pt_4326
+    - pnmgl:us_med_PNMGL_zones_initiation_jetski_2023_ofb_pol_4326
 
