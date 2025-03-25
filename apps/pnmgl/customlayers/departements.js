@@ -1,3 +1,18 @@
+
+const layer = new ol.layer.Vector({
+    source: new ol.source.Vector({
+
+        url: 'apps/pnmgl/data/test_stats.geojson',
+        format: new ol.format.GeoJSON()
+
+    }),
+
+});
+
+new CustomLayer('test_stats', layer);
+
+
+
 // const layer = new ol.layer.Tile({
 //     source: new ol.source.TileWMS({
 //         url: 'http://localhost:8080/geoserver/wms',
