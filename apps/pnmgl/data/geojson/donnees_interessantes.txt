@@ -1,0 +1,16 @@
+Eoliennes\Zones propices\us_med_pnmgl_eoliennes_EF-macro-zone-synthese-med-S_pol_4326.geojson
++surfacique
+champ :  surface (km²)
+
+///
+
+entièreté de: Localisation des structures de loisir\
++Ponctuels
+
+///
+
+Port et transport maritime\
+us_med_pnmgl_Cale-de-mise-a-leau_pt_4326.geojson
+US_MED_PNMGL_chantier_naval_AAMP_pt_2154.geojson
+us_med_pnmgl_Port-commerce_pt_4326.geojson
++ponctuels
