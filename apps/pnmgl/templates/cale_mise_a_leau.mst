@@ -3,13 +3,13 @@
 		<h3 class="title-feature">{{Port}}</h3>
 
 		<p class="text-feature">
-            {{#payantes}}
-                <span> Nombre de cales payantes: </span> {{Nb_Payante}}<br/>
-            {{/payantes}}
+            {{#NB_Payante}}
+                <span> Nombre de cales payantes: </span> {{NB_Payante}}<br/>
+            {{/NB_Payante}}
 			
-			{{#gratuites}}
-				<span> Nombre de cales gratuites: </span> {{Nb_Gratuite}}
-			{{/gratuites}}
+			{{#Nb_Gratuit}}
+				<span> Nombre de cales gratuites: </span> {{Nb_Gratuit}}<br/>
+			{{/Nb_Gratuit}}
 
 			{{#Source}}
 				<span> Source  :</span> {{Source}}<br/>

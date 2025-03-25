@@ -1,0 +1,31 @@
+{
+  "js": ["js/stats.js", "js/jquery.easyDrag.min.js"],
+  "css": "css/stats.css",
+  "html": "stats.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer": {
+      "stats": {
+        "title": "nombre de trucs cools !",
+        "open": true,
+        "style": {
+          "border": "",
+          "background": "white",
+          "text": "#5f5f5f",
+          "colorButton": "#333333"
+        },
+        "stats": [
+          {
+            "type": "stat",
+            "layerId": "test_stats",
+            "field": "",
+            "template": "<div class='statContainer Default'><span class='statValue'>{x}</span><span class='statLabel'>testt</span></div>",
+            "operator": "COUNT",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          }
+       
+        ]
+      }
+    }
+  }
+}

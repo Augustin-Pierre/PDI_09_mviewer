@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <config>
-    <application title="Mviewer" mouseposition="false" logo="" help="mviewer_help.html" measuretools="true" mapprint="true" exportpng="true" style="css/themes/wet_asphalt.css" togglealllayersfromtheme="true"/>
+    <application id='stats' title="Mviewer" mouseposition="false" logo="" help="mviewer_help.html" measuretools="true" mapprint="true" exportpng="true" style="css/themes/wet_asphalt.css" togglealllayersfromtheme="true"/>
     <mapoptions maxzoom="19" projection="EPSG:3857" center="356196.551809,5285834.551993" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
     <baselayers style="gallery">
@@ -17,6 +17,10 @@
     <extension type="component" id="layerfilter" path="demo/addons"/>
     </extensions>
 
+    <extensions>
+    <extension type="component" id="stats" path="apps/pnmgl"/>
+    </extensions>
+
     <themes>
 
         <theme name="Usages"  collapsed="true" id="environnement" icon="fas fa-leaf">
@@ -29,7 +33,7 @@
             <layer id="pnmgl:us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326" name="Cale de mise à l'eau"  visible="false" tiled="false"
 				url="http://localhost:8080/geoserver/wms"
                 attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">   
-                <template url="apps/pnmgl/templates/test.mst"/>   
+                <template url="apps/pnmgl/templates/cale_mise_a_leau.mst"/>   
 		    </layer>
 
             <layer id="pnmgl:us_med_PNMGL_chantier_naval_AAMP_pt_L93" name="Chantier naval"  visible="false" tiled="false"
@@ -40,6 +44,27 @@
             <layer id="pnmgl:us_med_PNMGL_plan_balisage_plages_ofb_pol_4326" name="Plan balisage des plages"  visible="false" tiled="false"
 				url="http://localhost:8080/geoserver/wms"
                 attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">    
+		    </layer>
+
+            <layer id="test_stats"
+                name="test des stats"
+                visible="true"
+                type="customlayer"
+                opacity="1"
+                url="apps/pnmgl/customlayers/departements.js"
+                infoformat="pplication/vnd.ogc.gm"
+                queryable="true"
+                attribution=""
+                metadata=""
+                metadata-csw="">
+            </layer>
+
+
+
+            <layer id="pnmgl:us_med_PNMGL_port_de_commerce_ofb_pt_4326" name="Ports de commerce"  visible="false" tiled="false"
+				url="http://localhost:8080/geoserver/wms"
+                attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">    
+                <template url="apps/pnmgl/templates/port_commerce.mst"/>   
 		    </layer>
 
             <layer id="pnmgl:us_med_PNMGL_route_transport_commerce_ofb_ln_4326" name="Route de transport de commerce"  visible="false" tiled="false"

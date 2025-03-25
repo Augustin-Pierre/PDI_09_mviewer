@@ -1,15 +1,19 @@
 {{#features}}
 	<li id="{{feature_ol_uid}}" class="inventaire item" style="width:100%;">
-		<h3 class="title-feature">{{Port}}</h3>
+		<h3 class="title-feature">{{NOM}}</h3>
 
 		<p class="text-feature">
-            {{#payantes}}
-                <span> Nombre de cales payantes: </span> {{Nb_Payante}}<br/>
-            {{/payantes}}
+            {{#Import_T}}
+                <span> Import T: </span> {{Import_T}}<br/>
+            {{/Import_T}}
 			
-			{{#gratuites}}
-				<span> Nombre de cales gratuites: </span> {{Nb_Gratuite}}
-			{{/gratuites}}
+			{{#Export_T}}
+				<span> Export T: </span> {{Export_T}}<br/>
+			{{/Export_T}}
+
+			{{#Num}}
+				<span> Num : </span> {{Num}}<br/>
+			{{/Num}}
 
 			{{#Source}}
 				<span> Source  :</span> {{Source}}<br/>
