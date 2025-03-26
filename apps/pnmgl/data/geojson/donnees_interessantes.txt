@@ -50,3 +50,9 @@ champ : SHAPE_Leng (m)
 Notes : Suivi de la variation de la ligne de côte. Linéaires représentent les déplacements de la côte. 
 Opérations intéressantes : min,max, moyenne
 ensemble de couches intéressantes pour un curseur temporel
+
+/// 
+
+Récifs\us_med_pnmgl_recif_art_fond_aamp_ixsurvey_pol_2154.geojson
++surfacique
+champ: SHAPE_Area (m²)
