@@ -32,3 +32,9 @@ Trait de côte\01_jet_de_rive\
 +polyligne
 champ : longueur (m)
 SAUF : eco_med_pnmgl_jetderive12052023_ofb_ln_2154 qui est en km
+
+///
+
+Nettoyage\us_med_pnmgl_nettoyage_plages-2021_pol_2154.geojson
++surfacique
+champ: surf (m²)
