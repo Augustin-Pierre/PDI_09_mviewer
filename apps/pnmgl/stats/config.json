@@ -7,7 +7,7 @@
     "mviewer": {
       "stats": {
         "title": "nombre de trucs cools !",
-        "open": true,
+        "open": false,
         "style": {
           "border": "",
           "background": "white",
@@ -15,15 +15,98 @@
           "colorButton": "#333333"
         },
         "stats": [
+
           {
             "type": "stat",
-            "layerId": "test_stats",
+            "layerId": "us_med_pnmgl_eoliennes_EF-macro-zone-synthese-med-S_pol_4326",
+            "field": "surface",
+            "template": "<div class='statContainer Icon-start'><div class='statsIcon'><img src='apps/pnmgl/stats/img/eolienne.png'></div><div class='statsText'><span class='statValue' style='color: #2a9aa9;'>{x} Km²</span> </br><span class='statLabel'>Propices à l'implentation d'éoliennes</span> </div></div>",
+            "operator": "SUM",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+          {
+            "type": "stat",
+            "layerId": "us_med_PNMGL_chantier_naval_AAMP_pt_2154",
             "field": "",
-            "template": "<div class='statContainer Default'><span class='statValue'>{x}</span><span class='statLabel'>testt</span></div>",
+            "template": "<div class='statContainer Default'><div class='statsIcon'><img src='apps/pnmgl/stats/img/commerce.png'></div><div class='statsText'><span class='statValue' style='color: #ea6a65;'>{x}</span> </br><span class='statLabel'>Chantier(s) naval(s)</span> </div></div>",
+            "operator": "COUNT",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+
+          {
+            "type": "stat",
+            "layerId": "us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326",
+            "field": "",
+            "template":"<div class='statContainer Default'><span class='statValue' style='color: #ea6a65;'>{x}</span><span class='statLabel'> cale(s) de mise à l'eau</span></div>",
+            "operator": "COUNT",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+
+          {
+            "type": "stat",
+            "layerId": "us_med_pnmgl_StructuresBateliers2023_pt_4326",
+            "field": "",
+            "template":"<div class='statContainer Default'><span class='statValue' style='color: #2a9aa9;'>{x}</span><span class='statLabel'> Structure(s) de bateliers</span></div>",
+            "operator": "COUNT",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+
+          {
+            "type": "stat",
+            "layerId": "us_med_pnmgl_StructuresLocationsBateaux2023_pt_4326",
+            "field": "",
+            "template":"<div class='statContainer Default'><span class='statValue' style='color: #2a9aa9;'>{x}</span><span class='statLabel'> Structure(s) de location de bateaux</span></div>",
+            "operator": "COUNT",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+
+          {
+            "type": "stat",
+            "layerId": "us_med_pnmgl_StructuresLoisir2023_pt_4326",
+            "field": "",
+            "template":"<div class='statContainer Default'><span class='statValue' style='color: #2a9aa9;'>{x}</span><span class='statLabel'> Structure(s) de loisir</span></div>",
+            "operator": "COUNT",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+
+          {
+            "type": "stat",
+            "layerId": "us_med_pnmgl_StructuresMotonautisme2023_pt_4326",
+            "field": "",
+            "template":"<div class='statContainer Default'><span class='statValue' style='color: #2a9aa9;'>{x}</span><span class='statLabel'> Structure(s) de motonautisme</span></div>",
+            "operator": "COUNT",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+
+          {
+            "type": "stat",
+            "layerId": "us_med_pnmgl_StructuresPlongee2023_pt_4326",
+            "field": "",
+            "template":"<div class='statContainer Default'><span class='statValue' style='color: #2a9aa9;'>{x}</span><span class='statLabel'> Structure(s) de plongée</span></div>",
+            "operator": "COUNT",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+
+          {
+            "type": "stat",
+            "layerId": "us_med_pnmgl_StructuresSportRame2023_pt_4326",
+            "field": "",
+            "template":"<div class='statContainer Default'><span class='statValue' style='color: #2a9aa9;'>{x}</span><span class='statLabel'> Structure(s) de sport de rame</span></div>",
+            "operator": "COUNT",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+
+          {
+            "type": "stat",
+            "layerId": "us_med_pnmgl_StructuresSportVent2023_pt_4326",
+            "field": "",
+            "template":"<div class='statContainer Default'><span class='statValue' style='color: #2a9aa9;'>{x}</span><span class='statLabel'> Structure(s) de sport de vent</span></div>",
             "operator": "COUNT",
             "__operator": "SUM,MAX,MEAN,COUNT"
           }
-       
+
+
+          
         ]
       }
     }

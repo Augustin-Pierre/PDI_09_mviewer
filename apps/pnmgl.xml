@@ -25,27 +25,6 @@
 
         <theme name="Usages"  collapsed="true" id="environnement" icon="fas fa-leaf">
 
-            <layer id="pnmgl:us_med_PNMGL_parcours_jetski_2023_ofb_ln_4326" name="Parcours de jetski"  visible="false" tiled="false"
-				url="http://localhost:8080/geoserver/wms"
-                attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">  
-		    </layer> 
-
-            <layer id="pnmgl:us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326" name="Cale de mise à l'eau"  visible="false" tiled="false"
-				url="http://localhost:8080/geoserver/wms"
-                attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">   
-                <template url="apps/pnmgl/templates/cale_mise_a_leau.mst"/>   
-		    </layer>
-
-            <layer id="pnmgl:us_med_PNMGL_chantier_naval_AAMP_pt_L93" name="Chantier naval"  visible="false" tiled="false"
-				url="http://localhost:8080/geoserver/wms"
-                attribution="AAMP" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="Nom" aliases="Nom">   
-		    </layer>
-
-            <layer id="pnmgl:us_med_PNMGL_plan_balisage_plages_ofb_pol_4326" name="Plan balisage des plages"  visible="false" tiled="false"
-				url="http://localhost:8080/geoserver/wms"
-                attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">    
-		    </layer>
-
             <layer id="test_stats"
                 name="test des stats"
                 visible="true"
@@ -58,7 +37,162 @@
                 metadata=""
                 metadata-csw="">
             </layer>
+                      
 
+
+            <layer id="us_med_pnmgl_eoliennes_EF-macro-zone-synthese-med-S_pol_4326"
+                name="Zones propices Eoliennes"
+                visible="false"
+                type="customlayer"
+                opacity="1"
+                url="apps/pnmgl/customlayers/eoliennes.js"
+                infoformat="pplication/vnd.ogc.gm"
+                queryable="true"
+                attribution="OFB">
+            </layer>
+
+            <group name="Ports et transport maritime" id="ptm">
+
+                <layer id="us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326"
+                    name="Cale de mise à l'eau"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/cale_de_mise_a_leau.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+
+                <layer id="us_med_PNMGL_chantier_naval_AAMP_pt_2154"
+                    name="Chantier naval"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/chantier_naval.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+
+
+                <layer id="us_med_PNMGL_port_de_commerce_ofb_pt_4326"
+                    name="port de commerce"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/port_de_commerce.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            
+                <layer id="us_med_PNMGL_route_transport_commerce_ofb_ln_4326"
+                    name="Routes de transport de commerce"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/route_transport_commerce.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+            
+
+            <group name="Structures de loisir" id="sdl">
+
+
+
+                <layer id="us_med_pnmgl_StructuresBateliers2023_pt_4326"
+                    name="Structure bateliers"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Structures_Bateliers2023.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+
+
+                <layer id="us_med_pnmgl_StructuresLocationsBateaux2023_pt_4326"
+                    name="Structures de location de bateaux"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Structures_Locations_Bateaux2023.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+
+
+                <layer id="us_med_pnmgl_StructuresLoisir2023_pt_4326"
+                    name="Strucures de loisir"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Structures_Loisir2023.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+
+                <layer id="us_med_pnmgl_StructuresMotonautisme2023_pt_4326"
+                    name="Structures de Motonautisme"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Structures_Motonautisme2023.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+
+
+                <layer id="us_med_pnmgl_StructuresPlongee2023_pt_4326"
+                    name="Structures de Plongée"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Structures_Plongee2023.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+
+                <layer id="us_med_pnmgl_StructuresSportRame2023_pt_4326"
+                    name="Structures de sport de rame"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Structures_Sport_Rame2023.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+
+                <layer id="us_med_pnmgl_StructuresSportVent2023_pt_4326"
+                    name="Structures de Sport de Vent"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Structures_Sport_Vent2023.js"
+                    infoformat="pplication/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+
+            </group>
+
+
+            <group name="Jetski" id="jetski">
+                <layer id="pnmgl:us_med_PNMGL_zones_initiation_jetski_2023_ofb_pol_4326" name="Zones d'initiation jetski"  visible="false" tiled="false"
+                    url="http://localhost:8080/geoserver/wms"
+                    attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">
+                </layer>
+            </group>
 
 
             <layer id="pnmgl:us_med_PNMGL_port_de_commerce_ofb_pt_4326" name="Ports de commerce"  visible="false" tiled="false"
@@ -77,10 +211,12 @@
                 attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">  
 		    </layer>
 
-            <layer id="pnmgl:us_med_PNMGL_zones_initiation_jetski_2023_ofb_pol_4326" name="Zones d'initiation jetski"  visible="false" tiled="false"
+            <layer id="pnmgl:us_med_PNMGL_sites_plongee_2021_ofb_pt_4326" name="Sites de plongée 2021"  visible="false" tiled="false"
 				url="http://localhost:8080/geoserver/wms"
-                attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">
+                attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">  
 		    </layer>
+
+            
 
         </theme>
 
