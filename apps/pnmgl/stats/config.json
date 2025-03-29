@@ -28,7 +28,7 @@
             "type": "stat",
             "layerId": "us_med_PNMGL_chantier_naval_AAMP_pt_2154",
             "field": "",
-            "template": "<div class='statContainer Default'><div class='statsIcon'><img src='apps/pnmgl/stats/img/commerce.png'></div><div class='statsText'><span class='statValue' style='color: #ea6a65;'>{x}</span> </br><span class='statLabel'>Chantier(s) naval(s)</span> </div></div>",
+            "template": "<div class='statContainer Icon-end'><div class='statsIcon'><img src='apps/pnmgl/stats/img/commerce.png'></div><div class='statsText'><span class='statValue' style='color: #ea6a65;'>{x}</span> </br><span class='statLabel'>Chantier(s) naval(s)</span> </div></div>",
             "operator": "COUNT",
             "__operator": "SUM,MAX,MEAN,COUNT"
           },

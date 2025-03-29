@@ -25,19 +25,19 @@
 
         <theme name="Usages"  collapsed="true" id="environnement" icon="fas fa-leaf">
 
-            <layer id="test_stats"
-                name="test des stats"
-                visible="true"
+
+
+
+            <layer id="us_med_pnmgl_ZMEL_RNMCB_ln_4326"
+                name="Zones de mouillage ZMEL"
+                visible="false"
                 type="customlayer"
                 opacity="1"
-                url="apps/pnmgl/customlayers/departements.js"
-                infoformat="pplication/vnd.ogc.gm"
+                url="apps/pnmgl/customlayers/Zones de mouillage/ZMEL Reserve/us_med_pnmgl_ZMEL_RNMCB_ln_4326.js"
+                infoformat="application/vnd.ogc.gm"
                 queryable="true"
-                attribution=""
-                metadata=""
-                metadata-csw="">
-            </layer>
-                      
+                attribution="OFB">
+            </layer>        
 
 
             <layer id="us_med_pnmgl_eoliennes_EF-macro-zone-synthese-med-S_pol_4326"
@@ -45,11 +45,22 @@
                 visible="false"
                 type="customlayer"
                 opacity="1"
-                url="apps/pnmgl/customlayers/eoliennes.js"
-                infoformat="pplication/vnd.ogc.gm"
+                url="apps/pnmgl/customlayers/Eoliennes/Zones propices/us_med_pnmgl_eoliennes_EF-macro-zone-synthese-med-S_pol_4326.js"
+                infoformat="application/vnd.ogc.gm"
                 queryable="true"
                 attribution="OFB">
             </layer>
+
+            <layer id="us_med_pnmgl_nettoyage_plages-2021_pol_2154"
+                    name="Nettoyage des plages"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Nettoyage/us_med_pnmgl_nettoyage_plages-2021_pol_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
 
             <group name="Ports et transport maritime" id="ptm">
 
@@ -58,8 +69,8 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/cale_de_mise_a_leau.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Ports et transport maritime/us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
@@ -69,8 +80,8 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/chantier_naval.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Ports et transport maritime/us_med_PNMGL_chantier_naval_AAMP_pt_2154.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
@@ -81,8 +92,8 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/port_de_commerce.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Ports et transport maritime/us_med_PNMGL_port_de_commerce_ofb_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
@@ -92,8 +103,8 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/route_transport_commerce.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Ports et transport maritime/us_med_PNMGL_route_transport_commerce_ofb_ln_4326.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
@@ -109,8 +120,8 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Structures_Bateliers2023.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresBateliers2023_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
@@ -121,8 +132,8 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Structures_Locations_Bateaux2023.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresLocationsBateaux2023_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
@@ -133,8 +144,8 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Structures_Loisir2023.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresLoisir2023_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
@@ -144,8 +155,8 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Structures_Motonautisme2023.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresMotonautisme2023_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
@@ -156,8 +167,8 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Structures_Plongee2023.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresPlongee2023_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
@@ -167,8 +178,8 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Structures_Sport_Rame2023.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresSportRame2023_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
@@ -178,13 +189,15 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Structures_Sport_Vent2023.js"
-                    infoformat="pplication/vnd.ogc.gm"
+                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresSportVent2023_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
 
             </group>
+
+
 
 
             <group name="Jetski" id="jetski">
@@ -216,9 +229,206 @@
                 attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">  
 		    </layer>
 
-            
 
-        </theme>
+            </theme>
+
+            <theme name="Eco"  collapsed="true" id="eco" icon="fas fa-leaf">
+            <group name="évolution jet de rive" id="ejdr">
+                
+                <layer id="eco_med_pnmgl_evolution_jetderive_20172018_ofb_ln_2154"
+                    name="Evolution jet de rive entre 2017 et 2018"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20172018_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_evolution_jetderive_20182019_ofb_ln_2154"
+                    name="Evolution jet de rive entre 2018 et 2019"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20182019_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_evolution_jetderive_20192020_ofb_ln_2154"
+                    name="Evolution jet de rive entre 2019 et 2020"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20192020_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_evolution_jetderive_20202021_ofb_ln_2154"
+                    name="Evolution jet de rive entre 2020 et 2021"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20202021_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_evolution_jetderive_20212022_ofb_ln_2154"
+                    name="Evolution jet de rive entre 2021 et 2022"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20212022_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_evolution_jetderive_20222023_ofb_ln_2154"
+                    name="Evolution jet de rive entre 2022 et 2023"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20222023_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_evolution_jetderive_20232023_ofb_ln_2154"
+                    name="Evolution jet de rive en 2023"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20232023_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_evolution_jetderive_20232024_ofb_ln_2154"
+                    name="Evolution jet de rive entre 2023 et 2024"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20232024_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_evolution_jetderive_20242024_ofb_ln_2154"
+                    name="Evolution jet de rive en 2024"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20242024_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+            <group name="jet de rive" id="jdr">
+                <layer id="eco_med_pnmgl_jetderive04092019_ofb_ln_2154"
+                    name="Jet de rive au 04/09/2019"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive04092019_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_jetderive11032020_ofb_ln_2154"
+                    name="Jet de rive au 11/03/2020"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive11032020_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_jetderive12052023_ofb_ln_2154"
+                    name="Jet de rive au 12/05/2023"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive12052023_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_jetderive19032024_ofb_ln_2154"
+                    name="Jet de rive au 19/03/2024"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive19032024_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_jetderive30092024_ofb_ln_2154"
+                    name="Jet de rive au 30/09/2024"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive30092024_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_jetderive0709202309102023_ofb_ln_2154"
+                    name="Jet de rive au 07/09/2023 09/10/2023"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive0709202309102023_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_jetderive0903202204042022_ofb_ln_2154"
+                    name="Jet de rive au 09/03/2022 04/04/2022"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive0903202204042022_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_jetderive2509201802102018_ofb_ln_2154"
+                    name="Jet de rive aux 25/09/2018 02/10/2018"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive2509201802102018_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_jetderive181020211011202115122021_ofb_ln_2154"
+                    name="Jet de rive aux 18/10/2021 10/11/2021 15/12/2021"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive181020211011202115122021_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="eco_med_pnmgl_jetderive190920172009201721092017_ofb_ln_2154"
+                    name="Jet de rive aux 19/09/2017 20/09/2017 21/09/2017"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive190920172009201721092017_ofb_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+            </theme>
 
     </themes>
 
