@@ -1,3 +1,64 @@
+M.on(M.events.Map.MOVE_END, function() {
+    var bbox = M.Map.getBbox();
+    console.log("Nouvelle emprise :", bbox);
+
+    var layer = M.Map.getLayerById("id_du_flux");
+    if (layer) {
+        var features = layer.getSource().getFeatures();
+
+        var featuresInBbox = features.filter(feature => 
+            feature.getGeometry().intersectsExtent(bbox)
+        );
+
+        console.log("Entités visibles dans l'emprise :", featuresInBbox.length);
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const layer = new ol.layer.Tile({
 //     source: new ol.source.TileWMS({
 //         url: 'http://localhost:8080/geoserver/wms',
@@ -72,3 +133,4 @@
 // // new CustomLayer('zones_jetski', layer9)
 
 // // // http://localhost/?config=apps/pnmgl.xml#
+
