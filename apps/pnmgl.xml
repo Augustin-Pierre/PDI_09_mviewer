@@ -607,8 +607,24 @@
                     opacity="1"
                     url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive190920172009201721092017_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
+                    metadata="https://data.ofb.fr/catalogue/Donnees-geographiques-OFB/api/records/11cbc2da-de1d-468f-b6d4-7499e66ad9a9?language=all"
                     queryable="true"
                     attribution="OFB">
+                </layer>
+            </group>
+
+            <group name="Données d'observation des habitats marins" id="obs_hab">
+                
+                <layer id="eco_med_n2000_dhff_mcv_observations_aamp_pt_3857" 
+                name="Données d'observation des habitats marins"  
+                visible="false" 
+                tiled="false"
+                    url="https://wxs.ofb.fr/geoserver/habitat/ows"
+                    attribution="ofb" 
+                    queryable="true" 
+                    infoformat = "application/vnd.ogc.gml" 
+                    attributefield="nom" 
+                    aliases="nom">  
                 </layer>
             </group>
         </theme>
