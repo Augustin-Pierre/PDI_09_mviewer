@@ -26,45 +26,27 @@
         <theme name="Usages"  collapsed="true" id="environnement" icon="fas fa-leaf">
 
 
-            <layer id="pnmgl:2023_us_med_pnmgl_resoblo_act_aat_ofb_pt_wgs84" 
+            <layer id="pnmgl:us_med_PNMGL_resoblo_act_aat_2023_ofb_pt_wgs84" 
                 name="Campagne de survol 2023"  
                 visible="false" 
                 tiled="false"
                 url="http://localhost:8080/geoserver/wms"
                 attribution="ofb" queryable="true" searchable="false" infoformat = "application/vnd.ogc.gml"  aliases="nom" 
                 attributefilter = "true" attributefilterenabled = "true" attributefield="date_camp" attributevalues = "09/09/2023,08/09/2023,03/09/2023,31/08/2023,25/08/2023,22/08/2023,13/08/2023,28/07/2023">
-                <template url ="apps/pnmgl/templates/survol.mst"/>   
+
             </layer>  
 
-            <layer id="us_med_pnmgl_ZMEL_RNMCB_ln_4326"
-                name="Zones de mouillage ZMEL"
-                visible="false"
-                type="customlayer"
-                opacity="1"
-                url="apps/pnmgl/customlayers/Zones de mouillage/ZMEL Reserve/us_med_pnmgl_ZMEL_RNMCB_ln_4326.js"
-                infoformat="application/vnd.ogc.gm"
-                queryable="true"
-                attribution="OFB">
-            </layer>        
+       
 
 
-            <layer id="us_med_pnmgl_eoliennes_EF-macro-zone-synthese-med-S_pol_4326"
-                name="Zones propices Eoliennes"
-                visible="false"
-                type="customlayer"
-                opacity="1"
-                url="apps/pnmgl/customlayers/Eoliennes/Zones propices/us_med_pnmgl_eoliennes_EF-macro-zone-synthese-med-S_pol_4326.js"
-                infoformat="application/vnd.ogc.gm"
-                queryable="true"
-                attribution="OFB">
-            </layer>
+
 
             <layer id="us_med_pnmgl_nettoyage_plages-2021_pol_2154"
                     name="Nettoyage des plages"
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Nettoyage/us_med_pnmgl_nettoyage_plages-2021_pol_2154.js"
+                    url="apps/pnmgl/customlayers/Usages/Nettoyage/us_med_pnmgl_nettoyage_plages-2021_pol_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -77,7 +59,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Ports et transport maritime/us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326.js"
+                    url="apps/pnmgl/customlayers/Usages/Ports et transport maritime/us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -88,7 +70,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Ports et transport maritime/us_med_PNMGL_chantier_naval_AAMP_pt_2154.js"
+                    url="apps/pnmgl/customlayers/Usages/Ports et transport maritime/us_med_PNMGL_chantier_naval_AAMP_pt_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -100,7 +82,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Ports et transport maritime/us_med_PNMGL_port_de_commerce_ofb_pt_4326.js"
+                    url="apps/pnmgl/customlayers/Usages/Ports et transport maritime/us_med_PNMGL_port_de_commerce_ofb_pt_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -111,13 +93,45 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Ports et transport maritime/us_med_PNMGL_route_transport_commerce_ofb_ln_4326.js"
+                    url="apps/pnmgl/customlayers/Usages/Ports et transport maritime/us_med_PNMGL_route_transport_commerce_ofb_ln_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
             </group>
-            
+
+            <group name="Zones de mouillage" id="mouillage">
+                <layer id="us_med_pnmgl_ZMEL_RNMCB_ln_4326"
+                    name="Zones de mouillage ZMEL"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Zones de mouillage/ZMEL Reserve/us_med_pnmgl_ZMEL_RNMCB_ln_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer> 
+                <layer id="us_med_pnmgl_ZMEL_Dispositifs_amarrages_2022_pt_4326"
+                    name="Dispositifs d'amarrage Zones de mouillage"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Zones de mouillage/ZMEL Parc/us_med_pnmgl_ZMEL_Dispositifs_amarrages_2022_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer> 
+                <layer id="us_med_pnmgl_ZMEL_Perimetre_pol_4326"
+                    name="Périmètres des Zones de mouillage"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Zones de mouillage/ZMEL Parc/us_med_pnmgl_ZMEL_Perimetre_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer> 
+            </group>
 
             <group name="Structures de loisir" id="sdl">
 
@@ -128,7 +142,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresBateliers2023_pt_4326.js"
+                    url="apps/pnmgl/customlayers/Usages/Localisation des structures de loisir/us_med_pnmgl_StructuresBateliers2023_pt_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -140,7 +154,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresLocationsBateaux2023_pt_4326.js"
+                    url="apps/pnmgl/customlayers/Usages/Localisation des structures de loisir/us_med_pnmgl_StructuresLocationsBateaux2023_pt_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -152,7 +166,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresLoisir2023_pt_4326.js"
+                    url="apps/pnmgl/customlayers/Usages/Localisation des structures de loisir/us_med_pnmgl_StructuresLoisir2023_pt_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -163,7 +177,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresMotonautisme2023_pt_4326.js"
+                    url="apps/pnmgl/customlayers/Usages/Localisation des structures de loisir/us_med_pnmgl_StructuresMotonautisme2023_pt_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -175,7 +189,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresPlongee2023_pt_4326.js"
+                    url="apps/pnmgl/customlayers/Usages/Localisation des structures de loisir/us_med_pnmgl_StructuresPlongee2023_pt_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -186,7 +200,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresSportRame2023_pt_4326.js"
+                    url="apps/pnmgl/customlayers/Usages/Localisation des structures de loisir/us_med_pnmgl_StructuresSportRame2023_pt_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -197,7 +211,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Localisation des structures de loisir/us_med_pnmgl_StructuresSportVent2023_pt_4326.js"
+                    url="apps/pnmgl/customlayers/Usages/Localisation des structures de loisir/us_med_pnmgl_StructuresSportVent2023_pt_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -213,6 +227,166 @@
                     url="http://localhost:8080/geoserver/wms"
                     attribution="ofb" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">
                 </layer>
+            </group>
+
+
+            <group name="Eoliennes" id="emr">
+
+                <layer id="us_med_pnmgl_eoliennes_EF-macro-zone-synthese-med-S_pol_4326"
+                    name="Zones propices Eoliennes"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Eoliennes/Zones propices/us_med_pnmgl_eoliennes_EF-macro-zone-synthese-med-S_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+
+                <layer id="us_med_pnmgl_omon_emr_afb_pol_4326"
+                    name="Omon emr pnmgl"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/EMR/PNMGL/us_med_pnmgl_omon_emr_afb_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="us_med_pnmgl_omon_emr_raccordt_afb_pol_4326"
+                    name="Omon emr raccordt pnmgl"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/EMR/PNMGL/us_med_pnmgl_omon_emr_raccordt_afb_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+
+            <group name="Épaves" id="epaves">
+                <layer id="us_med_pnmgl_epaves_aamp_pt_2154"
+                    name="Épaves"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Epaves/us_med_pnmgl_epaves_aamp_pt_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>           
+            </group>
+
+            <group name="Kayak" id="kayak">
+                <layer id="us_med_pnmgl_kayak_aamp_ln_2154"
+                    name="Kayak"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Kayak/us_med_pnmgl_kayak_aamp_ln_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>           
+            </group>
+
+            <group name="Récifs" id="recifs">
+                <layer id="us_med_pnmgl_recif_art_aamp_ixsurvey_pt_2154"
+                    name="Récif art"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Recifs/us_med_pnmgl_recif_art_aamp_ixsurvey_pt_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="us_med_pnmgl_recif_art_fond_aamp_ixsurvey_pol_2154"
+                    name="Récif art fond"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Recifs/us_med_pnmgl_recif_art_fond_aamp_ixsurvey_pol_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>      
+                <layer id="us_med_recifs_artificiels_pneus_pt_4326"
+                    name="Récif artificiels pneus"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Recifs/us_med_recifs_artificiels_pneus_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>          
+            </group>
+
+            <group name="RESOBLO" id="resoblo">
+                <layer id="us_med_pnmgl_resoblo_zmouillage_pol_4326"
+                    name="Resoblo"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/RESOBLO/us_med_pnmgl_resoblo_zmouillage_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>           
+            </group>
+
+            <group name="Plan de balisage des plages" id="balisage">
+                <layer id="us_med_pnmgl_Plan_balisage_plages_pol_4326"
+                    name="Plan de balisage des plages"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Plan de balisage des plages/us_med_pnmgl_Plan_balisage_plages_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>           
+            </group>
+
+            <group name="Etude prospective tdc 2050" id="prospective">
+                <layer id="us_med_pnmgl_DSAS_pt_2154"
+                    name="Etude prospective tdc 2050"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Etude prospective tdc 2050/us_med_pnmgl_DSAS_pt_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>    
+            </group>
+
+            <group name="Recupnet" id="recupnet">
+                <layer id="us_med_pnmgl_recupnet_ofb_pt_4326"
+                    name="Recupnet"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Recupnet/us_med_pnmgl_recupnet_ofb_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>    
+            </group>
+
+            <group name="Sites de plongée" id="plongee">
+                <layer id="us_med_PNMGL_sites_plongee_2021_ofb_pt_4326"
+                    name="Sites de plongée"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/sites de plongee/us_med_PNMGL_sites_plongee_2021_ofb_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>    
             </group>
 
 
@@ -240,7 +414,7 @@
 
             </theme>
 
-            <theme name="Eco"  collapsed="true" id="eco" icon="fas fa-leaf">
+        <theme name="Eco"  collapsed="true" id="eco" icon="fas fa-leaf">
             <group name="évolution jet de rive" id="ejdr">
                 
                 <layer id="eco_med_pnmgl_evolution_jetderive_20172018_ofb_ln_2154"
@@ -248,7 +422,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20172018_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20172018_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -258,7 +432,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20182019_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20182019_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -268,7 +442,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20192020_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20192020_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -278,7 +452,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20202021_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20202021_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -288,7 +462,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20212022_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20212022_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -298,7 +472,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20222023_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20222023_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -308,7 +482,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20232023_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20232023_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -318,7 +492,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20232024_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20232024_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -328,7 +502,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20242024_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/03_evolution_jet_rive/eco_med_pnmgl_evolution_jetderive_20242024_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -340,7 +514,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive04092019_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive04092019_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -350,7 +524,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive11032020_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive11032020_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -360,7 +534,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive12052023_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive12052023_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -370,7 +544,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive19032024_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive19032024_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -380,7 +554,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive30092024_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive30092024_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -390,7 +564,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive0709202309102023_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive0709202309102023_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -400,7 +574,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive0903202204042022_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive0903202204042022_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -410,7 +584,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive2509201802102018_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive2509201802102018_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -420,7 +594,7 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive181020211011202115122021_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive181020211011202115122021_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
@@ -430,13 +604,124 @@
                     visible="false"
                     type="customlayer"
                     opacity="1"
-                    url="apps/pnmgl/customlayers/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive190920172009201721092017_ofb_ln_2154.js"
+                    url="apps/pnmgl/customlayers/Eco/Trait de cote/01_jet_de_rive/eco_med_pnmgl_jetderive190920172009201721092017_ofb_ln_2154.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
                     attribution="OFB">
                 </layer>
             </group>
-            </theme>
+        </theme>
+
+        <theme name="Gouvernance"  collapsed="true" id="gouvernance" icon="fas fa-leaf">
+        
+            <group name="Carte des vocations du Parc" id="vocation">
+                <layer id="ges_med_pnmgl_vocation_aamp_pol_4326"
+                    name="Carte des vocations du Parc"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Gouvernance/Carte des vocations du Parc/ges_med_pnmgl_vocation_aamp_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+            <group name="Délimitation communes" id="commune">
+                <layer id="ges_med_pnmgl_REF_MET_Communes_littorales_pol_2154"
+                    name="Délimitation communes"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Gouvernance/Delimitation communes/ges_med_pnmgl_REF_MET_Communes_littorales_pol_2154.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+            <group name="Limites du Parc" id="limites_parc">
+                <layer id="ges_med_pnmgl_Limite_parc_ln_4326"
+                    name="Limite du Parc ln"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Gouvernance/Limite du Parc/ges_med_pnmgl_Limite_parc_ln_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="ges_med_pnmgl_Limite_parc_pol_4326"
+                    name="Limite du Parc pol"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Gouvernance/Limite du Parc/ges_med_pnmgl_Limite_parc_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+            <group name="Limite Mer territoriale" id="limit_mer_territoriale">
+                <layer id="ges_med_pnmgl_Mer_territoriale_ln_4326"
+                    name="Limite Mer territoriale"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Gouvernance/Limite Mer territoriale/ges_med_pnmgl_Mer_territoriale_ln_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+            <group name="Limite Réserve naturelle du Mas Larrieu et du PNR" id="limit_pnmgl_maslarrieu">
+                <layer id="ges_med_pnmgl_Delimitation_Mas_Larrieu_et_PNR_2022_pol_4326"
+                    name="Limite Réserve naturelle du Mas Larrieu et du PNR"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Gouvernance/Limite Reserve naturelle du Mas Larrieu et PNR/ges_med_pnmgl_Delimitation_Mas_Larrieu_et_PNR_2022_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+            <group name="Limite Réserve naturelle marine cerbere Banyuls" id="limit_pnmgl_cerberebanyuls">
+                <layer id="ges_med_pnmgl_Limite_RNMCB_pt_4326"
+                    name="Limite Réserve naturelle marine cerbere Banyuls"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Gouvernance/Limite Reserve naturelle marine cerbere Banyuls/ges_med_pnmgl_Limite_RNMCB_pt_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+            
+            <group name="ZEE Méditerranée" id="zee_mediterranee">
+                <layer id="ges_med_pnmgl_Decret_delimitation_ZEE_pol_3857"
+                    name="ZEE Méditerranée (polygone)"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Gouvernance/ZEE Mediterranee/ges_med_pnmgl_Decret_delimitation_ZEE_pol_3857.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+                <layer id="ges_med_pnmgl_Decret_delimitation_ZEE_pt_3857"
+                    name="ZEE Méditerranée (points)"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Gouvernance/ZEE Mediterranee/ges_med_pnmgl_Decret_delimitation_ZEE_pt_3857.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB">
+                </layer>
+            </group>
+            
+        </theme>
+
 
     </themes>
 

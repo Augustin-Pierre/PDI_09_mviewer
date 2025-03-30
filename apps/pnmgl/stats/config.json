@@ -104,8 +104,6 @@
             "operator": "COUNT",
             "__operator": "SUM,MAX,MEAN,COUNT"
           }
-
-
           
         ]
       }
