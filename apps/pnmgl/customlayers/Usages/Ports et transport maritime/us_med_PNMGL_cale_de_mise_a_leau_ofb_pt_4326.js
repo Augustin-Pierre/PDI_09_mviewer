@@ -7,15 +7,18 @@ const layer = new ol.layer.Vector({
 
     }),
 
-    // style: new ol.style.Style({
-    //     stroke: new ol.style.Stroke({
-    //       color: "rgba(46,83,103,0.6)",
-    //       width: 1,
-    //     }),
-    //     fill: new ol.style.Fill({
-    //       color: "rgba(0, 0, 0, 0)",
-    //     }),
-    // }),
+    style: new ol.style.Style({
+        image: new ol.style.Circle({
+        radius: 5,
+        fill: new ol.style.Fill({
+            color: "blue" // Couleur de remplissage du point
+        }),
+        stroke: new ol.style.Stroke({
+            color: "white", // Contour du point
+            width: 1
+        })
+    })
+    }),
 });
 
 new CustomLayer('us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326', layer);

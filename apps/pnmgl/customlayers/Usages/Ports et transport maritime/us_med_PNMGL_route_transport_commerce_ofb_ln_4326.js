@@ -7,15 +7,13 @@ const layer = new ol.layer.Vector({
 
     }),
 
-    // style: new ol.style.Style({
-    //     stroke: new ol.style.Stroke({
-    //       color: "rgba(46,83,103,0.6)",
-    //       width: 1,
-    //     }),
-    //     fill: new ol.style.Fill({
-    //       color: "rgba(0, 0, 0, 0)",
-    //     }),
-    // }),
+    style: new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: "rgb(255, 0, 0)",
+          width: 1,
+        }),
+
+    }),
 });
 
 new CustomLayer('us_med_PNMGL_route_transport_commerce_ofb_ln_4326', layer);
