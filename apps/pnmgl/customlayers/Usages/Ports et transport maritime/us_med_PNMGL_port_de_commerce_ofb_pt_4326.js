@@ -7,15 +7,14 @@ const layer = new ol.layer.Vector({
 
     }),
 
-    // style: new ol.style.Style({
-    //     stroke: new ol.style.Stroke({
-    //       color: "rgba(46,83,103,0.6)",
-    //       width: 1,
-    //     }),
-    //     fill: new ol.style.Fill({
-    //       color: "rgba(0, 0, 0, 0)",
-    //     }),
-    // }),
+    style: new ol.style.Style({
+        image: new ol.style.Circle({
+            radius: 4,
+            fill: new ol.style.Fill({
+                color: "rgb(255, 0, 0)",
+            }),
+        })
+    })
 });
 
 new CustomLayer('us_med_PNMGL_port_de_commerce_ofb_pt_4326', layer);
