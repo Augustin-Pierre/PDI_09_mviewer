@@ -23,7 +23,7 @@
 
     <themes>
 
-        <theme name="Usages"  collapsed="true" id="environnement" icon="fas fa-leaf">
+        <theme name="Usages"  collapsed="true" id="environnement" icon="fas fa-ship">
 
 
             <layer id="pnmgl:us_med_PNMGL_resoblo_act_aat_2023_ofb_pt_wgs84" 
@@ -612,9 +612,9 @@
             </group>
         </theme>
 
-        <theme name="Gouvernance"  collapsed="true" id="gouvernance" icon="fas fa-leaf">
+        <theme name="Gouvernance"  collapsed="true" id="gouvernance" icon="fas fa-globe">
         
-            <group name="Carte des vocations du Parc" id="vocation">
+            <group name="Carte des vocations du Parc" id="vocation" >
                 <layer id="ges_med_pnmgl_vocation_aamp_pol_4326"
                     name="Carte des vocations du Parc"
                     visible="false"
