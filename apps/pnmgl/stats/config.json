@@ -266,6 +266,14 @@
           },
           {
             "type": "stat",
+            "layerId": "us_med_pnmgl_recif_art_fond_aamp_ixsurvey_pol_2154",
+            "field": "shape_area",
+            "template": "<div class='statContainer Icon-start'><div class='statsIcon'><img src='apps/pnmgl/stats/img/recif.png'></div><div class='statsText'><span class='statValue' style='color: #ff5a37;'>{x} m²</span> </br><span class='statLabel'> de récifs artificiels</span> </div></div>",
+            "operator": "SUM",
+            "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+          {
+            "type": "stat",
             "layerId": "us_med_pnmgl_ZMEL_Dispositifs_amarrages_2022_pt_4326",
             "field": "",
             "template": "<div class='statContainer Default'><span class='statValue' style='color: #2a9aa9;'>{x}</span><span class='statLabel'> Dispositif(s) d'amarrage</span></div>",
