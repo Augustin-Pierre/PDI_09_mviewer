@@ -17,7 +17,7 @@
 		<p class="informations"> <strong>Code id : {{code_id}}</strong> </p>
 		<p class="informations"> <strong>Code de l'activité : {{code_act}}</strong> </p>
 		<p class="informations"> <strong>Etat : {{etat}}</strong> </p>
-		<p class="informations"> <strong>Nom de l'activité : {{code_id}}</strong> </p>
+		<p class="informations"> <strong>Nom de l'activité : {{nom_acti}}</strong> </p>
 		
 
 		
