@@ -8,16 +8,10 @@ const layer = new ol.layer.Vector({
     }),
 
     style: new ol.style.Style({
-        image: new ol.style.Circle({
-        radius: 5,
-        fill: new ol.style.Fill({
-            color: "blue" // Couleur de remplissage du point
-        }),
-        stroke: new ol.style.Stroke({
-            color: "white", // Contour du point
-            width: 1
+        image: new ol.style.Icon({
+            src: "apps/pnmgl/img/1.svg", 
+            scale: 1, 
         })
-    })
     }),
 });
 

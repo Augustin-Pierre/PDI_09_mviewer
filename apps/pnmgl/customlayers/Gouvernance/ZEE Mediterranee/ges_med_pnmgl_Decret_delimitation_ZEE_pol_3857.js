@@ -7,15 +7,15 @@ const layer = new ol.layer.Vector({
 
     }),
 
-    // style: new ol.style.Style({
-    //     stroke: new ol.style.Stroke({
-    //       color: "rgba(46,83,103,0.6)",
-    //       width: 1,
-    //     }),
-    //     fill: new ol.style.Fill({
-    //       color: "rgba(0, 0, 0, 0)",
-    //     }),
-    // }),
+    style: new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: "rgb(149, 5, 5)",
+          width: 1,
+        }),
+        fill: new ol.style.Fill({
+          color: "rgba(255, 255, 255, 0)",
+        }),
+    }),
 });
 
 new CustomLayer('ges_med_pnmgl_Decret_delimitation_ZEE_pol_3857', layer);

@@ -7,15 +7,12 @@ const layer = new ol.layer.Vector({
 
     }),
 
-    // style: new ol.style.Style({
-    //     stroke: new ol.style.Stroke({
-    //       color: "rgba(46,83,103,0.6)",
-    //       width: 1,
-    //     }),
-    //     fill: new ol.style.Fill({
-    //       color: "rgba(0, 0, 0, 0)",
-    //     }),
-    // }),
+    style: new ol.style.Style({
+        stroke: new ol.style.Stroke({
+            color: "rgb(1, 2, 90)", 
+            width: 3, 
+        })
+    })
 });
 
 new CustomLayer('ges_med_pnmgl_Limite_parc_ln_4326', layer);

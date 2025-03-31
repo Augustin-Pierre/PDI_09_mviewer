@@ -255,6 +255,14 @@
             "template": "<div class='statContainer Default'><span class='statLabel'> Évolution moyenne du jet de rive en 2024</span><span class='statValue' style='color: #2a9aa9;'>{x} m</span></div>",
             "operator": "MEAN",
             "__operator": "SUM,MAX,MEAN,COUNT"
+          },
+          {
+            "type": "stat",
+            "layerId": "us_med_pnmgl_recif_art_aamp_ixsurvey_pt_2154",
+            "field": "",
+            "template": "<div class='statContainer Icon-start'><div class='statsIcon'><img src='apps/pnmgl/stats/img/recif.png'></div><div class='statsText'><span class='statValue' style='color: #ff5a37;'>{x}</span> </br><span class='statLabel'>Récif(s) arttificiel(s)</span> </div></div>",
+            "operator": "COUNT",
+            "__operator": "SUM,MAX,MEAN,COUNT"
           }
           
           

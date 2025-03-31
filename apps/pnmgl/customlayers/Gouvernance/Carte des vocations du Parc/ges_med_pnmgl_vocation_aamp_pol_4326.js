@@ -7,15 +7,15 @@ const layer = new ol.layer.Vector({
 
     }),
 
-    // style: new ol.style.Style({
-    //     stroke: new ol.style.Stroke({
-    //       color: "rgba(46,83,103,0.6)",
-    //       width: 1,
-    //     }),
-    //     fill: new ol.style.Fill({
-    //       color: "rgba(0, 0, 0, 0)",
-    //     }),
-    // }),
+    style: new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: "rgb(0, 0, 0)",
+          width: 2,
+        }),
+        fill: new ol.style.Fill({
+          color: "rgba(73, 137, 255, 0.61)",
+        }),
+    }),
 });
 
 new CustomLayer('ges_med_pnmgl_vocation_aamp_pol_4326', layer);
