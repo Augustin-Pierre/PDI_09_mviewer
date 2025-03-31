@@ -180,7 +180,7 @@
                     url="http://localhost:8080/geoserver/wms"
                     attribution="Différentes dates de survol au cours de 2023-OFB" queryable="true" searchable="false" infoformat = "application/vnd.ogc.gml"  aliases="nom" 
                     attributefilter = "true" attributefilterenabled = "true" attributefield="date_camp" attributevalues = "09/09/2023,08/09/2023,03/09/2023,31/08/2023,25/08/2023,22/08/2023,13/08/2023,28/07/2023">
-                    <template url="apps/pnmgl/temlates/survol.mst"></template>
+                    <template url="apps/pnmgl/templates/survol.mst"></template>
 
                 </layer>  
             </group>
