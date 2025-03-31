@@ -140,6 +140,39 @@
                     attribution="OFB"
                     legendurl="apps/pnmgl/img/surf_bleu.svg">
                 </layer> 
+                <layer id="us_med_pnmgl_ZMEL_Ligne_de_mouillage_ln_4326"
+                    name="Ligne de mouillage ZMEL Paulilles"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Zones de mouillage/ZMEL Paulilles/us_med_pnmgl_ZMEL_Ligne_de_mouillage_ln_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB"
+                    legendurl="apps/pnmgl/img/trait_bleu_marine.svg">
+                </layer> 
+                <layer id="us_med_pnmgl_ZMO_Collioure_Banyuls_pol_4326"
+                    name="ZMO Collioure et Banyuls"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Zones de mouillage/ZMO Collioure et Banyuls/us_med_pnmgl_ZMO_Collioure_Banyuls_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB"
+                    legendurl="apps/pnmgl/img/surf1.svg">
+                </layer> 
+                <layer id="us_med_pnmgl_ZMEL_Plage_sanatorium_mouillage_reglemente_pol_4326"
+                    name="Zone interdite au mouillage - Elmes, Plage sanatorium mouillage reglemente"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Zones de mouillage/Zone interdite au mouillage - Elmes/us_med_pnmgl_ZMEL_Plage_sanatorium_mouillage_reglemente_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB"
+                    legendurl="apps/pnmgl/img/surf_rouge.svg">
+                </layer> 
             </group>
 
             <group name="Structures de loisir" id="sdl">
@@ -239,10 +272,28 @@
 
 
             <group name="Jetski" id="jetski">
-                <layer id="pnmgl:us_med_PNMGL_zones_initiation_jetski_2023_ofb_pol_4326" name="Zones d'initiation jetski"  visible="false" tiled="false"
-                    url="http://localhost:8080/geoserver/wms"
-                    attribution="OFB" queryable="true" infoformat = "application/vnd.ogc.gml" attributefield="nom" aliases="nom">
-                </layer>
+                <layer id="us_med_pnmgl_parcours_jetski_2023_ofb_ln_4326"
+                    name="Parcours Jetski"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Jetski/us_med_pnmgl_parcours_jetski_2023_ofb_ln_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB"
+                    legendurl="apps/pnmgl/img/trait_bleu_fonce.svg">
+                </layer> 
+                <layer id="us_med_pnmgl_zones_initiation_jetski_2023_ofb_pol_4326"
+                    name="Zones d'initiation Jetski"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Jetski/us_med_pnmgl_zones_initiation_jetski_2023_ofb_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB"
+                    legendurl="apps/pnmgl/img/surf_gris.svg">
+                </layer> 
             </group>
 
 
@@ -418,6 +469,20 @@
                     attribution="OFB"
                     legendurl="apps/pnmgl/img/15.svg">
                 </layer>    
+            </group>
+
+            <group name="Macrozones" id="macrozones">
+                <layer id="us_med_macrozone_eof_pol_4326"
+                    name="Macrozone"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/Macrozone/us_med_macrozone_eof_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="OFB"
+                    legendurl="apps/pnmgl/img/surf_point.svg">
+                </layer>
             </group>
 
 
