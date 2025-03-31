@@ -26,35 +26,6 @@
         <theme name="Usages"  collapsed="true" id="environnement" icon="fas fa-ship">
 
 
-            <layer id="pnmgl:us_med_PNMGL_resoblo_act_aat_2023_ofb_pt_wgs84" 
-                name="Campagne de survol 2023"  
-                visible="false" 
-                tiled="false"
-                url="http://localhost:8080/geoserver/wms"
-                attribution="OFB" queryable="true" searchable="false" infoformat = "application/vnd.ogc.gml"  aliases="nom"
-                attributefilter = "true" attributefilterenabled = "true" attributefield="date_camp" attributevalues = "09/09/2023,08/09/2023,03/09/2023,31/08/2023,25/08/2023,22/08/2023,13/08/2023,28/07/2023">
-                <template url="/apps/pnmgl/templates/survol.mst"></template>
-
-            </layer>  
-
-       
-
-
-
-
-            <layer id="us_med_pnmgl_nettoyage_plages-2021_pol_2154"
-                    name="Nettoyage des plages"
-                    visible="false"
-                    type="customlayer"
-                    opacity="1"
-                    url="apps/pnmgl/customlayers/Usages/Nettoyage/us_med_pnmgl_nettoyage_plages-2021_pol_2154.js"
-                    infoformat="application/vnd.ogc.gm"
-                    queryable="true"
-                    attribution="OFB"
-                    legendurl="apps/pnmgl/img/surf_jaune.svg">
-                    <template url="apps/pnmgl/templates/defaut.mst"></template>
-                </layer>
-
             <group name="Ports et transport maritime" id="ptm">
 
                 <layer id="us_med_PNMGL_cale_de_mise_a_leau_ofb_pt_4326"
@@ -185,6 +156,35 @@
                     <template url="apps/pnmgl/templates/defaut.mst"></template>
                 </layer> 
             </group>
+
+            <group name="RESOBLO" id="resoblo">
+                <layer id="us_med_pnmgl_resoblo_zmouillage_pol_4326"
+                    name="Resoblo"
+                    visible="false"
+                    type="customlayer"
+                    opacity="1"
+                    url="apps/pnmgl/customlayers/Usages/RESOBLO/us_med_pnmgl_resoblo_zmouillage_pol_4326.js"
+                    infoformat="application/vnd.ogc.gm"
+                    queryable="true"
+                    attribution="Le projet RESOBLO étudie les usages, ici les mouillages avec ancre - OFB"
+                    legendurl="apps/pnmgl/img/surf_bleu.svg">
+                    <template url="apps/pnmgl/templates/defaut.mst"></template>
+                </layer>           
+            </group>
+
+            <group name="Suivis de fréquentation par survol" id="survol">
+                <layer id="pnmgl:us_med_PNMGL_resoblo_act_aat_2023_ofb_pt_wgs84" 
+                    name="Campagne de survol 2023"  
+                    visible="false" 
+                    tiled="false"
+                    url="http://localhost:8080/geoserver/wms"
+                    attribution="OFB" queryable="true" searchable="false" infoformat = "application/vnd.ogc.gml"  aliases="nom" 
+                    attributefilter = "true" attributefilterenabled = "true" attributefield="date_camp" attributevalues = "09/09/2023,08/09/2023,03/09/2023,31/08/2023,25/08/2023,22/08/2023,13/08/2023,28/07/2023">
+                    <template url="templates/survol.mst"></template>
+
+                </layer>  
+            </group>
+
 
             <group name="Structures de loisir" id="sdl">
 
@@ -429,20 +429,7 @@
                 </layer>          
             </group>
 
-            <group name="RESOBLO" id="resoblo">
-                <layer id="us_med_pnmgl_resoblo_zmouillage_pol_4326"
-                    name="Resoblo"
-                    visible="false"
-                    type="customlayer"
-                    opacity="1"
-                    url="apps/pnmgl/customlayers/Usages/RESOBLO/us_med_pnmgl_resoblo_zmouillage_pol_4326.js"
-                    infoformat="application/vnd.ogc.gm"
-                    queryable="true"
-                    attribution="OFB"
-                    legendurl="apps/pnmgl/img/surf_bleu.svg">
-                    <template url="apps/pnmgl/templates/defaut.mst"></template>
-                </layer>           
-            </group>
+
 
             <group name="Plan de balisage des plages" id="balisage">
                 <layer id="us_med_pnmgl_Plan_balisage_plages_pol_4326"
@@ -457,6 +444,20 @@
                     legendurl="apps/pnmgl/img/surf_bleu.svg">
                     <template url="apps/pnmgl/templates/defaut.mst"></template>
                 </layer>           
+            </group>
+
+            <group name="Nettoyage" id="net">
+                <layer id="us_med_pnmgl_nettoyage_plages-2021_pol_2154"
+                        name="Nettoyage des plages"
+                        visible="false"
+                        type="customlayer"
+                        opacity="1"
+                        url="apps/pnmgl/customlayers/Usages/Nettoyage/us_med_pnmgl_nettoyage_plages-2021_pol_2154.js"
+                        infoformat="application/vnd.ogc.gm"
+                        queryable="true"
+                        attribution="OFB"
+                        legendurl="apps/pnmgl/img/surf_jaune.svg">
+                </layer>
             </group>
 
             <group name="Etude prospective tdc 2050" id="prospective">
