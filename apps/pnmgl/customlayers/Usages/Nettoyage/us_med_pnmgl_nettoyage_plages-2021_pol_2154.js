@@ -7,15 +7,15 @@ const layer = new ol.layer.Vector({
 
     }),
 
-    // style: new ol.style.Style({
-    //     stroke: new ol.style.Stroke({
-    //       color: "rgba(46,83,103,0.6)",
-    //       width: 1,
-    //     }),
-    //     fill: new ol.style.Fill({
-    //       color: "rgba(0, 0, 0, 0)",
-    //     }),
-    // }),
+    style: new ol.style.Style({
+        stroke: new ol.style.Stroke({
+          color: "rgb(0, 0, 0)",
+          width: 1,
+        }),
+        fill: new ol.style.Fill({
+          color: "rgba(255, 241, 92, 0.79)",
+        }),
+    }),
 });
 layer.getSource().on('addfeature', function(event) {
     const feature = event.feature;

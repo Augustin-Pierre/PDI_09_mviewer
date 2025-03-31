@@ -7,15 +7,12 @@ const layer = new ol.layer.Vector({
 
     }),
 
-    // style: new ol.style.Style({
-    //     stroke: new ol.style.Stroke({
-    //       color: "rgba(46,83,103,0.6)",
-    //       width: 1,
-    //     }),
-    //     fill: new ol.style.Fill({
-    //       color: "rgba(0, 0, 0, 0)",
-    //     }),
-    // }),
+    style: new ol.style.Style({
+        image: new ol.style.Icon({
+            src: "apps/pnmgl/img/epave2.png", // Remplace par l'URL de ton image
+            scale: 0.8 // Ajuste la taille de l'icône
+        })
+    })
 });
 
 new CustomLayer('us_med_pnmgl_epaves_aamp_pt_2154', layer);

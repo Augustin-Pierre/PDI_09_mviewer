@@ -8,18 +8,10 @@ const layer = new ol.layer.Vector({
     }),
 
     style: new ol.style.Style({
-        image: new ol.style.RegularShape({
-        points: 4, 
-        radius: 6, 
-        angle: 0, 
-        fill: new ol.style.Fill({
-            color: "rgba(36, 12, 166, 0.85)" 
-        }),
-        stroke: new ol.style.Stroke({
-            color: "rgba(255, 255, 255, 0)", 
-            width: 3
+        image: new ol.style.Icon({
+            src: "apps/pnmgl/img/7.svg", 
+            scale: 1, 
         })
-    })
     }),
 });
 
