@@ -178,7 +178,7 @@
                     visible="false" 
                     tiled="false"
                     url="http://localhost:8080/geoserver/wms"
-                    attribution="OFB" queryable="true" searchable="false" infoformat = "application/vnd.ogc.gml"  aliases="nom" 
+                    attribution="Différentes dates de survol au cours de 2023-OFB" queryable="true" searchable="false" infoformat = "application/vnd.ogc.gml"  aliases="nom" 
                     attributefilter = "true" attributefilterenabled = "true" attributefield="date_camp" attributevalues = "09/09/2023,08/09/2023,03/09/2023,31/08/2023,25/08/2023,22/08/2023,13/08/2023,28/07/2023">
                     <template url="templates/survol.mst"></template>
 
@@ -484,7 +484,7 @@
                     url="apps/pnmgl/customlayers/Usages/Recupnet/us_med_pnmgl_recupnet_ofb_pt_4326.js"
                     infoformat="application/vnd.ogc.gm"
                     queryable="true"
-                    attribution="OFB"
+                    attribution="Recupnet vise à retirer les filets et autres déchets. Cette couche montre les entités retirées ou non - OFB"
                     legendurl="apps/pnmgl/img/14.svg">
                     <template url="apps/pnmgl/templates/defaut.mst"></template>
                 </layer>    
