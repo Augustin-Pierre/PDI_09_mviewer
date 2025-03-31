@@ -390,7 +390,7 @@
 
             <group name="Récifs" id="recifs">
                 <layer id="us_med_pnmgl_recif_art_aamp_ixsurvey_pt_2154"
-                    name="Récif art"
+                    name="Récifs artificiels"
                     visible="false"
                     type="customlayer"
                     opacity="1"
@@ -403,7 +403,7 @@
                     <template url="apps/pnmgl/templates/defaut.mst"></template>
                 </layer>
                 <layer id="us_med_pnmgl_recif_art_fond_aamp_ixsurvey_pol_2154"
-                    name="Récif art fond"
+                    name="Récifs artificiels fond"
                     visible="false"
                     type="customlayer"
                     opacity="1"
@@ -416,7 +416,7 @@
                     <template url="apps/pnmgl/templates/defaut.mst"></template>
                 </layer>      
                 <layer id="us_med_recifs_artificiels_pneus_pt_4326"
-                    name="Récif artificiels pneus"
+                    name="Récifs artificiels pneus"
                     visible="false"
                     type="customlayer"
                     opacity="1"
