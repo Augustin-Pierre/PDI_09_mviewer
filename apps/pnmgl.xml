@@ -51,12 +51,12 @@
                     queryable="true"
                     attribution="OFB"
                     legendurl="apps/pnmgl/img/2.svg">
-                    <template url="apps/pnmgl/templates/defaut.mst"></template>
+                    <template url="apps/pnmgl/templates/chantier_naval.mst"></template>
                 </layer>
 
 
                 <layer id="us_med_PNMGL_port_de_commerce_ofb_pt_4326"
-                    name="port de commerce"
+                    name="Port de commerce"
                     visible="false"
                     type="customlayer"
                     opacity="1"
@@ -141,7 +141,7 @@
                     queryable="true"
                     attribution="OFB"
                     legendurl="apps/pnmgl/img/surf1.svg">
-                    <template url="apps/pnmgl/templates/defaut.mst"></template>
+                    <template url="apps/pnmgl/templates/ZMO.mst"></template>
                 </layer> 
                 <layer id="us_med_pnmgl_ZMEL_Plage_sanatorium_mouillage_reglemente_pol_4326"
                     name="Zone interdite au mouillage - Elmes, Plage sanatorium mouillage reglemente"
@@ -153,7 +153,7 @@
                     queryable="true"
                     attribution="OFB"
                     legendurl="apps/pnmgl/img/surf_rouge.svg">
-                    <template url="apps/pnmgl/templates/defaut.mst"></template>
+                    <template url="apps/pnmgl/templates/zones_interdites.mst"></template>
                 </layer> 
             </group>
 
@@ -369,7 +369,7 @@
                     queryable="true"
                     attribution="OFB"
                     legendurl="apps/pnmgl/img/epave2.png">
-                    <template url="apps/pnmgl/templates/defaut.mst"></template>
+                    <template url="apps/pnmgl/templates/epave.mst"></template>
                 </layer>           
             </group>
 
@@ -546,7 +546,7 @@
             </theme>
 
         <theme name="Eco"  collapsed="true" id="eco" icon="fas fa-leaf">
-            <group name="évolution jet de rive" id="ejdr">
+            <group name="Evolution jet de rive" id="ejdr">
                 
                 <layer id="eco_med_pnmgl_evolution_jetderive_20172018_ofb_ln_2154"
                     name="Evolution jet de rive entre 2017 et 2018"
@@ -657,7 +657,7 @@
                     <template url="apps/pnmgl/templates/defaut.mst"></template>
                 </layer>
             </group>
-            <group name="jet de rive" id="jdr">
+            <group name="Jet de rive" id="jdr">
                 <layer id="eco_med_pnmgl_jetderive30092024_ofb_ln_2154"
                     name="Jet de rive au 30/09/2024"
                     visible="false"
