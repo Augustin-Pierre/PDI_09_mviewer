@@ -4,7 +4,7 @@ Documentation pour les devs:
 
 ## Mviewer
 
-Pour pouvoir afficher la carte du PNMGL, utiliser **localhost/?config=apps/pnmgl.xml**
+Pour pouvoir afficher la carte du PNMGL, utiliser **http://localhost/**
 
 # Organisation des fichiers
 
@@ -13,11 +13,11 @@ Si vous devez modifier un fichier en dehors, mettez-le dans `common`
 
 Les fichiers attenants au projet sont présents dans `apps/pnmgl`
 
-Le fichier pour ajouter/enlever des couches est `apps/pnmgl.xml`
+Le fichier pour ajouter/enlever des couches est `apps/default.xml`
 
 # Interactions 
 
-Pour pouvoir interagir avec les différentes couches, il faut préciser l'attribut queryable="true" dans l'attribution de la couche dans le fichier `pnmgl.xml`
+Pour pouvoir interagir avec les différentes couches, il faut préciser l'attribut queryable="true" dans l'attribution de la couche dans le fichier `default.xml`
 
 
 ## Géoserveur
