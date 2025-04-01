@@ -17,13 +17,13 @@ const layer = new ol.layer.Vector({
 });
 
 
-// Fonction pour transformer les géométries en EPSG:4326
+// Fonction pour transformer les géométries en EPSG
 layer.getSource().on('addfeature', function(event) {
     const feature = event.feature;
     const geometry = feature.getGeometry();
     
     if (geometry) {
-        // Transformation de la géométrie de EPSG:2154 vers EPSG:4326
+        // Transformation de la géométrie de EPSG:2154 vers EPSG:3857
         geometry.transform('EPSG:2154', 'EPSG:3857');
     }
 });
