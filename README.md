@@ -2,10 +2,7 @@
 
 L'application produite par l'équipe du PDI 09 est un visualisateur cartographique basé sur l'application OpenSource Mviewer. 
 
-Liens utiles :
-
 - [Site officiel mviewer](https://mviewer.github.io/fr/)
--[Lien vers la documentation(en PDF)]
 
 
 ## Déploiement
@@ -18,8 +15,31 @@ Le déploiement se passe en trois étapes :
 - Installer le Geoserver. Une partie de la documentaion utilisateur y est dédiée.
 - Si vous souhaitez publier vos propres couches/thèmes, modifiez le fichier `apps/default.xml`, en suivant la documentation technique fournie avec le projet
 
+Pour pouvoir afficher la carte du PNMGL, utiliser **http://localhost/**.
+
 
 ## Fichier apps/default.xml
 
 Le fichier de configuration permet la personnalisation des thèmes/couches du visualiseur ; une configuration par
 défaut est fournie dans `apps/default.xml`, vous pouvez le dupliquer et l'adapter à vos besoins en vous aidant de la [documentation.](http://mviewerdoc.readthedocs.io/fr/latest/)
+
+Des exemples de code pour pouvoir modifier l'application sont disponibles dans le dossier `apps\pnmgl\aide_user`
+
+
+# Organisation des fichiers
+
+**NE PAS MODIFIER LES FICHIERS EN DEHORS DU DOSSIER apps**
+Si vous devez modifier un fichier en dehors, mettez-le dans `common`
+
+Les fichiers attenants au projet sont présents dans `apps/pnmgl`
+
+Le fichier pour ajouter/enlever des couches est `apps/default.xml`
+
+
+## Geoserver
+
+# Authentification :
+username: admin
+mdp : geoserver
+
+Espace de travail: pnmgl
