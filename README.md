@@ -9,7 +9,7 @@ Une documentation (utilisateur et technique) est disponible au format pdf dans l
 
 ## Déploiement
 
-**Il faut disposer d'un geoserver pour faire fonctionner certaines couches de l'application.** Pour une installation basique, le déploiement se passe en trois étapes :
+**Le projet nécessite une instance de déploiement Apache (vous pouvez utiliser MAMP par exemple). Il faut disposer d'un geoserver pour faire fonctionner certaines couches de l'application.** Pour une installation basique, le déploiement se passe en trois étapes :
 
 - Cloner le projet dans le dossier de votre choix
 - Copier ce dossier dans le dossier /var/www/ ( ou autres dossiers de déploiement Apache)
