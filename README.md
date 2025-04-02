@@ -4,7 +4,7 @@ L'application produite par l'équipe du PDI 09 est un visualisateur cartographiq
 
 - [Site officiel mviewer](https://mviewer.github.io/fr/)
 
-Une documentation (utilisateur et technique) est disponible au format pdf dans le fichier `documentation.pdf`.
+Une documentation (utilisateur et technique) est disponible au format pdf dans le fichier `documentation.pdf` (téléchargez le pdf sur votre machine pour pouvoir utiliser les liens du pdf).
 
 
 ## Déploiement
