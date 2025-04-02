@@ -36,9 +36,8 @@ Les fichiers attenants au projet sont présents dans `apps/pnmgl`
 Le fichier pour ajouter/enlever des couches est `apps/default.xml`
 
 
-## Geoserver
+# Authentification Geoserver
 
-# Authentification :
 username: admin
 mdp : geoserver
 
