@@ -33,12 +33,14 @@ let style_ponctuel= new ol.style.Style({
 // });
 
 
-let style_surfacique= new ol.style.Style({
+let style_surfacique = new ol.style.Style({
     stroke: new ol.style.Stroke({
-      color: "rgb(0, 47, 255)",
-      width: 2,
-    })
-
+      color: "rgba(46,83,103,0.6)",
+      width: 1,
+    }),
+    fill: new ol.style.Fill({
+      color: "rgba(0, 0, 0, 0)",
+    }),
 });
 
 let style_linéaire= new ol.style.Style({
