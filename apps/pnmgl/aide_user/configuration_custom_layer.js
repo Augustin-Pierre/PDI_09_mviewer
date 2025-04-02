@@ -11,7 +11,7 @@
 // Nous n'avons pas réussi, la légende se gère donc à l'aide d'un fichier SVG contenant le symbole (dans img) et intégré grâce à la balise legendurl du XML
 // S'il existe un tel fichier, on peut également donner directement ce fichier comme style pour un ponctuel
 
-// définitions de styles en fonction du type de donnée (modifier celui concerné par la donnée, d'autres attributs sont disponibles)
+// définitions de styles en fonction du type de donnée (conserver et modifier celui concerné par la donnée, d'autres attributs sont disponibles)
 
 
 
