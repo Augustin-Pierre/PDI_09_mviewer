@@ -9,7 +9,7 @@ Une documentation (utilisateur et technique) est disponible au format pdf dans l
 
 ## Déploiement
 
-Le déploiement se passe en trois étapes :
+**Il faut disposer d'un geoserver pour faire fonctionner certaines couches de l'application.** Pour une installation basique, le déploiement se passe en trois étapes :
 
 - Cloner le projet dans le dossier de votre choix
 - Copier ce dossier dans le dossier /var/www/ ( ou autres dossiers de déploiement Apache)
@@ -19,6 +19,7 @@ Le déploiement se passe en trois étapes :
 
 Pour pouvoir afficher la carte du PNMGL, utiliser **http://localhost/**.
 
+**Pour une documentation plus poussée sur l'installation, consultez le fichier `documentation.pdf`.**
 
 # Organisation des fichiers
 
