@@ -196,7 +196,7 @@
             <group name="Structures de loisir" id="sdl">
 
                 <layer id="us_med_pnmgl_StructuresLoisir2023_pt_4326"
-                    name="Strucures de loisir (tous les types)"
+                    name="Structures de loisir (tous les types)"
                     visible="false"
                     type="customlayer"
                     opacity="1"
