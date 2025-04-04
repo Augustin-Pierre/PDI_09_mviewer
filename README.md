@@ -6,6 +6,8 @@ L'application produite par l'équipe du PDI 09 est un visualisateur cartographiq
 
 Une documentation (utilisateur et technique) est disponible au format pdf dans le fichier `documentation.pdf` (téléchargez le pdf sur votre machine pour pouvoir utiliser les liens du pdf).
 
+Un grand merci à Vincet De Oliveira et Maylis De La Serve pour leurs conseils techniques, à Thierry Saffroy et Delphine Genes pour leur aide dans la gestion de projet, à Alizée Martin, Olga Bolzinger et Grégory Agin pour avoir porté ce projet du côté du PNMGL et enfin à Amyeric Dutremble pour son rapport de stage du cycle géomètre-géomaticien réalisé pour Altermap et nommé "les enjeux de la cartographie", qui nous a permis de nous faire découvrir mviewer et de nous donner une idée des possibilités qu'offrent cet outil.
+
 
 ## Déploiement
 
